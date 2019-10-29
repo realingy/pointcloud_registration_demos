@@ -73,6 +73,10 @@ target_link_libraries( 2_Surf_rgbd_pointcloud_Registration ${OpenCV_LIBS} ${PCL_
 add_executable( 3_Registration_IPC 3_基于IPC的点云配准.cpp )
 target_link_libraries( 3_Registration_IPC ${OpenCV_LIBS} ${PCL_LIBRARIES})
 
+
+add_executable( 4_Registration_normal_distributions 4_基于正态分布变换的点云配准.cpp )
+target_link_libraries( 4_Registration_normal_distributions ${OpenCV_LIBS} ${PCL_LIBRARIES})
+
 # set(EXE_NAME 01_DisplayCloudAsHeight)
 # add_executable(${EXE_NAME} ${DIR_SRCS})
 
